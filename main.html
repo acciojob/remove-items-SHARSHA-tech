@@ -19,14 +19,15 @@
 		</form>
 		<script type="text/javascript" src="./script.js">
 			//your JS code here. If required.
+			window.onload = function() {
 button.addEventListener("click" , () =>{
 	const select=document.getElementById('colorSelect');
 	const selectedIndex = select.selectedIndex;
 	if(selectedIndex !== -1){
 		select.remove(selectedIndex);
 	}
-})
-		</script>
+});
+			};		</script>
 
 	</body>
 
