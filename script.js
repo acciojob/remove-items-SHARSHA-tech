@@ -4,7 +4,7 @@ const button = document.getElementById("removeBtn");
 	button.addEventListener("click",() =>{
 	const selectedIndex = select.selectedIndex;
 	if(selectedIndex !== -1){
-		select.remove(selectedIndex);
+		select.options.remove(selectedIndex);
 	}
 });
 		
