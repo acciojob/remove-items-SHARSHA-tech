@@ -1,12 +1,10 @@
 const select = document.getElementById("colorSelect");
-const button = document.querySelector('input[type="button]");
+const button = document.getElementById("removeBtn");
 
-	button.addEventListener("click" , () =>{
-	
+	button.addEventListener("click",() =>{
 	const selectedIndex = select.selectedIndex;
 	if(selectedIndex !== -1){
 		select.remove(selectedIndex);
-	
+	}
 });
 		
-}
